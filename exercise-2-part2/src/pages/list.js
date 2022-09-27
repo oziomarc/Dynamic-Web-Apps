@@ -5,9 +5,19 @@ import ArticleCard from
 
 function List() {
     return (
-        <div>
+        <main className="pageWrapper">
             <h1>Articles List</h1>
-        </div>
+                {Data.map((article, i) => (
+                    <ArticleCard
+                    key={i}
+                    blurb={article.blurb}
+                    date={article.publishedDate}
+                    imageAlt={article.image.alt}
+                    imageSrc={article.image.url}
+                    title={article.title}
+                    />
+                ))}
+        </main>
     );
 }
 
