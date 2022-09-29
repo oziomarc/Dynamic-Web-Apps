@@ -1,12 +1,19 @@
-import React from React;
+import React, { useMemo } from "react";
 
 function ArticleCard ({
     blurb,
     date,
     imageAlt,
     imageSrc,
-    title
+    title,
+    id
 }) {
+    const articleDate = useMemo(() => {
+        if (!date) return "";
+        const parsedDate = new Date(date);
+        return parsedDate.toDateString();
+    }, [date]);
+
     return (
         <div className="articleCard">
             <div className="articleCard--image">
@@ -21,5 +28,7 @@ function ArticleCard ({
                 </p>
             </div>
         </div>
-    )
+    );
 }
+
+export default ArticleCard

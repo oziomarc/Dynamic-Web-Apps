@@ -2,7 +2,7 @@
 
 // export default Data;
 
-export default [
+const Data = [
     {
       "id": "article-one",
       "title": "Article One: First Fake Article",
@@ -205,3 +205,4 @@ export default [
     }
   ]
 
+export default Data;

@@ -1,6 +1,6 @@
 import React from "react"
-import data from "../components/data";
-import ArticleCard from 
+import Data from "../components/data";
+import ArticleCard from "../components/ArticleCard";
 
 
 function List() {
