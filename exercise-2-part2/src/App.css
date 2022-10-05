@@ -1,7 +1,7 @@
 .pageWrapper {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 25px;
+    /* padding: 50px 100px 50px 100px; */
 }
 
 h1 {
@@ -9,19 +9,62 @@ h1 {
 }
 
 .articleCard {
+    display: flex;
+    flex-direction: row;
     border: 1px solid black;
     padding: 40px;
+    min-width: 1280px;
+}
+
+.articleCard h2 {
+    font-size: 50px;
 }
 
 .articleCard--image {
-    
+    margin-right: 20px;
+    padding: 0;
+    flex-basis: 40%;
+}
+
+.articleCard--image img {
+    height: 100%;
+    width: 100%;
 }
 
 .articleCard--text {
-    
+    flex-basis: 100%;
+    width: auto;
+    margin: 0;
+}
+
+.article--header {
+    display: flex;
+    justify-content: center;
 }
 
 .article--header--wrapper {
-    
+    width: 50%;
 }
+
+.article--header--wrapper h1 {
+    font-size: 80px;
+}
+
+.article--header--wrapper p {
+    font-size: 40px;
+}
+
+.article--content {
+    padding: 100px;
+    width: 50%;
+}
+
+.article--content h2 {
+    font-size: 64px;
+}
+
+.article--content p {
+    font-size: 33px;
+}
+
 
